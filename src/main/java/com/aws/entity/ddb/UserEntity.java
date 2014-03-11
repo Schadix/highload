@@ -21,7 +21,6 @@ public class UserEntity {
 
     private String account;
     private String bets;
-    private String insertDate;
 
     @DynamoDBHashKey
     public String getAccount() {
@@ -30,15 +29,6 @@ public class UserEntity {
 
     public void setAccount(String account) {
         this.account = account;
-    }
-
-    @DynamoDBAttribute
-    public String getInsertDate() {
-        return insertDate;
-    }
-
-    public void setInsertDate(String insertDate) {
-        this.insertDate = insertDate;
     }
     
     @DynamoDBAttribute
