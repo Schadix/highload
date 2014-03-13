@@ -39,4 +39,9 @@ public class UserEntity {
     public void setBets(String bets) {
         this.bets = bets;
     }
+    
+    @Override
+    public String toString(){
+        return this.account+ ","+this.bets;
+    }
 }
